@@ -27,6 +27,6 @@ All files of this project are currently under GPLv3 license, this excludes all t
 You can use this project but you must make sure you give credits to me and the other prople who made this possible.
 
 ### Credits
-- [@Fede2782](https://github.com/Fede2782) for his awesome (tbh) work on https://github.com/UN1CA/target_a34x_patches_tee
+- [@Fede2782](https://github.com/Fede2782) for his awesome (tbh) work on https://github.com/UN1CA/target_a34x_patches_tee, the original repo this was forked from.
 - [@salvogiangri](https://github.com/salvogiangri)
 - [@jesec](https://github.com/jesec) and [@corsicanu](https://github.com/corsicanu) for the original GitHub Actions script
