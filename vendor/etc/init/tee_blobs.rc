@@ -22,23 +22,14 @@
 # - If it is a known version it is mounted and boot process continues normally
 
 # Credits to @salvogiangri for the initial version of this script
+# Modified TEE Blobs Patch for Galaxy A04, credits to Fede2782 and salvogiangri.
 
-# SM-A346B (Europe)
-on early-fs && property:ro.boot.em.model=SM-A346B && property:ro.boot.bootloader=A346BXXSBDYI1
+# SM-A045F
+on early-fs && property:ro.boot.em.model=SM-A045F && property:ro.boot.bootloader=A045FXXSCEYJ2
     # TEEgris
-    mount none /vendor/tee_eea /vendor/tee bind
+    mount none /vendor/tee_f /vendor/tee bind
 
-# SM-A346E (Asia/Africa)
-on early-fs && property:ro.boot.em.model=SM-A346E && property:ro.boot.bootloader=A346EXXSADYG1
+# SM-A045M
+on early-fs && property:ro.boot.em.model=SM-A045M && property:ro.boot.bootloader=A045MUBSDEYJ1
     # TEEgris
-    mount none /vendor/tee_sea /vendor/tee bind
-
-# SM-A346E (Oceania)
-on early-fs && property:ro.boot.em.model=SM-A346E && property:ro.boot.bootloader=A346EXXSADYH1
-    # TEEgris
-    mount none /vendor/tee_sea_august /vendor/tee bind
-
-# SM-A346M (South America)
-on early-fs && property:ro.boot.em.model=SM-A346M && property:ro.boot.bootloader=A346MUBSBDYI1
-    # TEEgris
-    mount none /vendor/tee_latam /vendor/tee bind
+    mount none /vendor/tee_m /vendor/tee bind
